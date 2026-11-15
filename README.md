@@ -1,4 +1,4 @@
-# internship-intelligence# Internship Intelligence — AI-Powered Recruitment Workflow Automation
+# Internship Intelligence — AI-Powered Recruitment Workflow Automation
 
 > **Project status:** MVP workflows built locally; verify each scheduled workflow before claiming 24/7 operation. Public repository contains no personal correspondence or credentials.
 
