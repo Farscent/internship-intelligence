@@ -1,0 +1,20 @@
+# Local-only n8n runtime. Reuses an existing Docker volume created with:
+# docker volume create n8n_data
+# IMPORTANT: Stop any other container named 'n8n' before running this Compose project.
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n
+    container_name: n8n
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5678:5678"
+    environment:
+      TZ: Asia/Jakarta
+      GENERIC_TIMEZONE: Asia/Jakarta
+      N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: "true"
+    volumes:
+      - n8n_data:/home/node/.n8n
+volumes:
+  n8n_data:
+    external: true
+    name: n8n_data

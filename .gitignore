@@ -1,0 +1,29 @@
+# Secrets and configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*client_secret*.json
+*credentials*.json
+
+# Runtime / backups / execution data
+*.db
+*.sqlite
+*.sqlite3
+*.tar
+*.tar.gz
+n8n_data/
+backup/
+backups/
+
+# Private correspondence and personal records
+personal-data/
+private/
+exports-private/
+*.eml
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
