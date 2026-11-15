@@ -70,8 +70,19 @@ flowchart TD
 
 The included Compose file is intended for **local-only** use and binds to `127.0.0.1`. Do not expose it directly to the public internet.
 
-## Evidence
-Add redacted screenshots in `screenshots/`, showing the workflow canvases and execution results with fictional data. Suggested files: `calendar-sync.png`, `deadline-digest.png`, `email-extraction.png`, and `sheets-example.png`.
+## Workflow Architecture
+
+### 1. Application Intake & Validation
+![Application Intake](screenshots/01-application-intake.png)
+
+### 2. Gmail Integration & AI Extraction
+![AI Email Processing](screenshots/02-gmail-ai-extraction.png)
+
+### 3. Google Calendar Synchronization
+![Calendar Sync](screenshots/03-calendar-sync.png)
+
+### 4. Automated Deadline Notifications
+![Deadline Digest](screenshots/04-deadline-digest.png)
 
 ## Testing & limitations
 See [`docs/testing.md`](docs/testing.md) for a reproducible test plan and [`docs/architecture.md`](docs/architecture.md) for technical decisions and improvements.
